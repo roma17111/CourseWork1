@@ -1,25 +1,33 @@
 public class Employee {
+
+    private static int counter = 1;
+
+    private int id;
   private   String lastName;
+
    private String firstName;
   private   String secondName;
   private   int department;
    private  int  payment;
 
-    private static int id =0;
 
-    public static int count () {
-        return id++;
-    }
+
+
+
 
     public Employee(String lastName, String firstName, String secondName, int department, int payment) {
+
         this.lastName = lastName;
         this.firstName = firstName;
         this.secondName = secondName;
         this.department = department;
         this.payment = payment;
+        this.id = counter++;
+
     }
 
-    public static int getId() {
+
+    public  int getId() {
         return id;
     }
 
@@ -53,7 +61,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return id + "." +
+        return  "id " +  id + "." +
                 " Фамилия: " + lastName + "." +
                 " Имя: " + firstName + "." +
                 " Отчество: '" + secondName + "." +

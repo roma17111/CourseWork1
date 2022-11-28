@@ -64,7 +64,6 @@ public class Main {
     employees[9] = new Employee("Семин", "Павел", "Юрьевич", 1, 110000);
 
     for (int i = 0; i < employees.length; i++) {
-      Employee.count();
       System.out.println(employees[i]);
     }
      findAllPayments(employees);
