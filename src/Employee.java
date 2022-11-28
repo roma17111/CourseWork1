@@ -53,11 +53,13 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Список всех сотрудников: " + id +
-                " Фамилия: " + lastName +
-                " Имя: " + firstName +
-                " Отчество: '" + secondName +
-                " Номер отдела: " + department +
-                " Заработная плата: " + payment;
+        return id + "." +
+                " Фамилия: " + lastName + "." +
+                " Имя: " + firstName + "." +
+                " Отчество: '" + secondName + "." +
+                " Номер отдела: " + department + "." +
+                " Заработная плата: " + payment + ".";
     }
+
+
 }
