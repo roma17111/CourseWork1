@@ -1,0 +1,73 @@
+public class Employee {
+
+    private static int counter = 1;
+
+    private int id;
+  private   String lastName;
+
+   private String firstName;
+  private   String secondName;
+  private   int department;
+   private  int  payment;
+
+
+
+
+
+
+    public Employee(String lastName, String firstName, String secondName, int department, int payment) {
+
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.department = department;
+        this.payment = payment;
+        this.id = counter++;
+
+    }
+
+
+    public  int getId() {
+        return id;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public int getDepartment() {
+        return department;
+    }
+
+    public int getPayment() {
+        return payment;
+    }
+
+    public void setDepartment(int department) {
+        this.department = department;
+    }
+
+    public void setPayment(int payment) {
+        this.payment = payment;
+    }
+
+    @Override
+    public String toString() {
+        return  "id " +  id + "." +
+                " Фамилия: " + lastName + "." +
+                " Имя: " + firstName + "." +
+                " Отчество: '" + secondName + "." +
+                " Номер отдела: " + department + "." +
+                " Заработная плата: " + payment + ".";
+    }
+
+
+}
